@@ -66,11 +66,13 @@ const TopBar = ({ active }: Props) => {
             onClick={() => {
               setNavStatus((navStatus + 1) % 2);
               if (navStatus === 0) {
-                document.querySelector("#hamburgerItems").style =
-                  "transform:scaleX(0)";
+                document.querySelector<HTMLElement>(
+                  "#hamburgerItems"
+                ).style.transform = "scaleX(0)";
               } else {
-                document.querySelector("#hamburgerItems").style =
-                  "transform:scaleX(1)";
+                document.querySelector<HTMLElement>(
+                  "#hamburgerItems"
+                ).style.transform = "scaleX(1)";
               }
             }}
             className={styles.hamburger}
