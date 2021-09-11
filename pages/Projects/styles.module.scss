@@ -94,9 +94,15 @@
     color: white;
   }
   button:first-of-type {
-    background-color: #3f51b5;
+    background-color: rgb(63, 81, 181);
+    &:hover {
+      background-color: rgb(43, 61, 161);
+    }
   }
   button:last-of-type {
+    &:hover {
+      background-color: rgb(210, 26, 65);
+    }
     background-color: rgb(230, 46, 85);
     margin-left: 10px;
   }
