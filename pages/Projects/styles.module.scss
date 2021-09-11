@@ -1,0 +1,103 @@
+.cardContainer {
+  display: inline-block;
+  position: relative;
+  > div {
+    border: 3px solid gold;
+  }
+  h2 {
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: white;
+    position: absolute;
+    z-index: 1;
+  }
+
+  i {
+    font-size: 5vw;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
+  &::before {
+    z-index: 1;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &:hover::before {
+    background-color: gold;
+    transition: background-color 0.3s ease-out;
+    opacity: 0.98;
+  }
+
+  &:hover {
+    h2,
+    i {
+      opacity: 1;
+    }
+  }
+}
+
+.cardGallery {
+  height: 85vh;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2rem;
+}
+
+.card {
+  &:hover {
+    background-color: rgb(245, 236, 236);
+  }
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  .textContainer {
+    padding: 5px 10px 10px 10px;
+    > h4 {
+      margin-top: 0;
+      margin-bottom: 5px;
+    }
+    > p {
+      margin-top: 5px;
+    }
+  }
+}
+
+.card1 {
+  width: 252px;
+}
+.card2 {
+  width: 303px;
+}
+.card3 {
+  width: 300px;
+}
+
+.buttonContainer {
+  display: inline;
+
+  > button {
+    box-shadow: 0px 1px 3px grey;
+    border-radius: 3px;
+    border: 0;
+    padding: 4px;
+    font-size: 1.3rem;
+    color: white;
+  }
+  button:first-of-type {
+    background-color: #3f51b5;
+  }
+  button:last-of-type {
+    background-color: rgb(230, 46, 85);
+    margin-left: 10px;
+  }
+}

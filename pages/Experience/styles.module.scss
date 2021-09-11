@@ -1,0 +1,29 @@
+.jobTitleContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  > h4 {
+    margin-top: 5px;
+    margin-bottom: 0px;
+  }
+}
+
+.location {
+  color: grey;
+}
+
+.jobItem {
+  padding-top: 5px;
+  border-bottom: 1px solid grey;
+  > h4 {
+    margin: 0;
+  }
+
+  &:first-of-type {
+    padding-top: 0px;
+  }
+  &:last-of-type {
+    border-bottom: none;
+  }
+}

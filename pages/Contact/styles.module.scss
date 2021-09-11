@@ -1,0 +1,44 @@
+.contactForm {
+  padding: 1rem;
+  border: 2px solid black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: whitesmoke;
+  width: 60%;
+  border-radius: 10px;
+  gap: 1.5rem;
+
+  > div {
+    width: 60%;
+  }
+
+  input,
+  textarea {
+    width: 100%;
+  }
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+.button {
+  width: unset !important;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  border-radius: 10px;
+  border: transparent;
+  background-color: #427bff;
+  color: white;
+  font-size: 1rem;
+}
+
+.green {
+  color: green;
+}
+.red {
+  color: red;
+}
