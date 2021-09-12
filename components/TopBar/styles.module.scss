@@ -7,7 +7,7 @@
   height: 10vh;
   > h3 {
     margin-left: 5%;
-    width: 15%;
+    width: fit-content;
     margin-bottom: 0;
     margin-top: 0;
   }
@@ -91,6 +91,7 @@
         width: 40px;
       }
       .hamburgerItems {
+        font-size: 2rem;
         transform-origin: right;
         transition: transform ease-in-out 0.2s;
         transform: scaleX(0);
@@ -99,8 +100,10 @@
 
         > li {
           padding-left: 1rem;
+          padding-top: 1.5rem;
+          padding-bottom: 1.5rem;
           list-style-type: none;
-          height: 2rem;
+          // height: 2rem;
           > a {
             color: white;
           }
