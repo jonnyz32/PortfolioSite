@@ -21,7 +21,7 @@ const HomePage = ({ active }) => {
       <main className={styles.homeWrapper}>
         <div className={styles.imageContainer}>
           <Image
-            src="/images/meCompressed.jpg"
+            src="/images/professionalPhoto1CroppedZoom.jpg"
             width={450}
             height={450}
             layout="intrinsic"
